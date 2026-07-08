@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
     <title>Muhammad Rehan · Contact</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
@@ -83,7 +83,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 12px;
             transition: background var(--transition);
         }
 
@@ -94,7 +94,7 @@
             background: var(--bg-dashboard);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border-radius: 40px;
+            border-radius: 28px;
             box-shadow: var(--shadow);
             overflow: hidden;
             transition: all var(--transition);
@@ -105,12 +105,12 @@
         .top-bar {
             background: var(--bg-topbar);
             color: var(--text-light);
-            padding: 18px 32px;
+            padding: 16px 20px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            gap: 18px 24px;
+            gap: 14px 16px;
             transition: background var(--transition);
             position: relative;
             overflow: hidden;
@@ -120,25 +120,25 @@
             position: absolute;
             top: -50%;
             right: -20%;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
             background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
             border-radius: 50%;
             pointer-events: none;
         }
 
         .top-profile h2 {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             font-weight: 700;
             letter-spacing: -0.3px;
-            line-height: 1.1;
+            line-height: 1.2;
             background: linear-gradient(135deg, var(--gradient-start) 60%, var(--gradient-end));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         .top-profile .sub {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             opacity: 0.85;
             margin-top: 2px;
             font-weight: 400;
@@ -151,25 +151,30 @@
             display: flex;
             flex-wrap: wrap;
             list-style: none;
-            gap: 6px;
+            gap: 4px;
+            width: 100%;
+            justify-content: center;
         }
         .nav-links a {
             color: var(--nav-text);
             text-decoration: none;
-            font-size: 1.05rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
-            gap: 10px;
-            padding: 10px 20px;
+            gap: 6px;
+            padding: 8px 14px;
             border-radius: 40px;
             font-weight: 500;
             transition: all 0.3s ease;
             white-space: nowrap;
             background: transparent;
             position: relative;
+            min-height: 44px;
+            min-width: 44px;
+            justify-content: center;
         }
         .nav-links a i {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
         }
         .nav-links .active a {
             background: var(--nav-active);
@@ -187,49 +192,51 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 10px 14px;
+            gap: 6px 10px;
+            width: 100%;
+            justify-content: center;
         }
         .lang-label {
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             opacity: 0.9;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             color: var(--text-light);
         }
         .lang-badge {
             background: var(--lang-bg);
             border: 1px solid var(--lang-border);
             color: var(--lang-color);
-            padding: 5px 16px;
+            padding: 4px 12px;
             border-radius: 40px;
-            font-size: 0.85rem;
+            font-size: 0.7rem;
             font-weight: 500;
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             transition: all 0.3s ease;
             white-space: nowrap;
             cursor: default;
+            min-height: 32px;
         }
         .lang-badge i {
-            font-size: 1rem;
+            font-size: 0.85rem;
             color: var(--lang-color);
         }
         .lang-badge:hover {
-            transform: translateY(-3px) scale(1.05);
-            box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px) scale(1.03);
+            box-shadow: 0 4px 12px -6px rgba(0, 0, 0, 0.3);
         }
 
         .top-footer {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             opacity: 0.7;
             color: var(--text-light);
             display: flex;
             align-items: center;
-            gap: 8px;
-            margin-left: auto;
+            gap: 6px;
         }
 
         /* ===== Theme Toggle ===== */
@@ -237,31 +244,43 @@
             background: rgba(255, 255, 255, 0.12);
             border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 40px;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             transition: all 0.3s ease;
             backdrop-filter: blur(4px);
+            min-height: 40px;
+            min-width: 44px;
+            justify-content: center;
         }
         .theme-toggle:hover {
             background: rgba(255, 255, 255, 0.25);
             transform: scale(1.05);
         }
         .theme-toggle i {
-            font-size: 1.1rem;
+            font-size: 1rem;
+        }
+
+        .top-bar-utils {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
         }
 
         /* ===== Main Content ===== */
         .main {
             background: transparent;
-            padding: 28px 32px 32px;
+            padding: 20px 16px 24px;
             display: flex;
             flex-direction: column;
-            gap: 26px;
+            gap: 20px;
             animation: fadeInUp 0.6s ease;
         }
 
@@ -278,23 +297,23 @@
 
         .main-header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
         }
         .main-header h1 {
-            font-size: 2.1rem;
+            font-size: 1.6rem;
             font-weight: 700;
             color: var(--text-primary);
             transition: color var(--transition);
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
         .main-header h1 i {
             color: var(--stat-icon-color);
             animation: pulse 2s infinite;
+            font-size: 1.4rem;
         }
         @keyframes pulse {
             0%,
@@ -308,38 +327,40 @@
 
         .badge {
             background: var(--badge-bg);
-            padding: 10px 24px;
+            padding: 8px 18px;
             border-radius: 40px;
             font-weight: 500;
             color: var(--text-primary);
             box-shadow: 0 4px 12px rgba(0, 30, 60, 0.06);
             border: 1px solid var(--badge-border);
-            font-size: 0.95rem;
+            font-size: 0.8rem;
             transition: all var(--transition);
             backdrop-filter: blur(4px);
+            width: 100%;
+            text-align: center;
         }
         .badge i {
-            margin-right: 8px;
+            margin-right: 6px;
         }
 
         /* ===== Contact Grid ===== */
         .contact-grid {
             display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            gap: 24px;
+            grid-template-columns: 1fr;
+            gap: 16px;
         }
 
         /* Contact Info Card */
         .contact-info {
             background: var(--card-bg);
             backdrop-filter: blur(8px);
-            border-radius: 26px;
-            padding: 30px;
+            border-radius: 22px;
+            padding: 20px;
             border: 1px solid var(--card-border);
             box-shadow: 0 10px 22px -16px rgba(0, 0, 0, 0.08);
             transition: all var(--transition);
             animation: slideUp 0.6s ease backwards;
-            animation-delay: 0.2s;
+            animation-delay: 0.1s;
         }
         .contact-info:hover {
             transform: translateY(-4px);
@@ -348,13 +369,13 @@
 
         .contact-info h2 {
             color: var(--text-primary);
-            font-size: 1.6rem;
-            margin-bottom: 20px;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             border-bottom: 2px solid var(--card-border);
-            padding-bottom: 14px;
+            padding-bottom: 12px;
         }
         .contact-info h2 i {
             color: var(--stat-icon-color);
@@ -363,8 +384,8 @@
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 16px;
-            padding: 14px 0;
+            gap: 14px;
+            padding: 12px 0;
             border-bottom: 1px solid var(--card-border);
             transition: all 0.3s ease;
         }
@@ -372,40 +393,41 @@
             border-bottom: none;
         }
         .contact-item:hover {
-            transform: translateX(6px);
+            transform: translateX(4px);
         }
         .contact-item i {
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
             background: var(--stat-icon-bg);
-            border-radius: 14px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             color: var(--stat-icon-color);
             flex-shrink: 0;
             transition: all 0.3s ease;
         }
         .contact-item:hover i {
-            transform: scale(1.1) rotate(4deg);
+            transform: scale(1.08) rotate(3deg);
         }
         .contact-item .info {
             flex: 1;
         }
         .contact-item .info h4 {
             color: var(--text-primary);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 600;
         }
         .contact-item .info p {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.85rem;
         }
         .contact-item .info a {
             color: var(--stat-icon-color);
             text-decoration: none;
             transition: color 0.3s ease;
+            word-break: break-all;
         }
         .contact-item .info a:hover {
             color: var(--text-primary);
@@ -414,46 +436,49 @@
 
         /* Social Links */
         .social-links {
-            margin-top: 20px;
+            margin-top: 16px;
             display: flex;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
         }
         .social-link {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            padding: 10px 20px;
+            gap: 8px;
+            padding: 8px 16px;
             background: var(--stat-icon-bg);
             border-radius: 40px;
             color: var(--stat-icon-color);
             text-decoration: none;
             font-weight: 500;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             transition: all 0.3s ease;
             border: 1px solid var(--card-border);
+            flex: 1;
+            justify-content: center;
+            min-height: 44px;
         }
         .social-link:hover {
             background: var(--social-hover);
             color: white;
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             box-shadow: 0 8px 20px -12px rgba(0, 0, 0, 0.3);
         }
         .social-link i {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         /* Contact Form */
         .contact-form {
             background: var(--card-bg);
             backdrop-filter: blur(8px);
-            border-radius: 26px;
-            padding: 30px;
+            border-radius: 22px;
+            padding: 20px;
             border: 1px solid var(--card-border);
             box-shadow: 0 10px 22px -16px rgba(0, 0, 0, 0.08);
             transition: all var(--transition);
             animation: slideUp 0.6s ease backwards;
-            animation-delay: 0.3s;
+            animation-delay: 0.2s;
         }
         .contact-form:hover {
             transform: translateY(-4px);
@@ -462,37 +487,37 @@
 
         .contact-form h2 {
             color: var(--text-primary);
-            font-size: 1.6rem;
-            margin-bottom: 20px;
+            font-size: 1.3rem;
+            margin-bottom: 16px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             border-bottom: 2px solid var(--card-border);
-            padding-bottom: 14px;
+            padding-bottom: 12px;
         }
         .contact-form h2 i {
             color: var(--stat-icon-color);
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         .form-group label {
             display: block;
             color: var(--text-primary);
             font-weight: 500;
-            margin-bottom: 6px;
-            font-size: 0.95rem;
+            margin-bottom: 4px;
+            font-size: 0.85rem;
         }
         .form-group input,
         .form-group textarea {
             width: 100%;
-            padding: 12px 16px;
+            padding: 10px 14px;
             background: var(--input-bg);
             border: 1px solid var(--input-border);
-            border-radius: 14px;
+            border-radius: 12px;
             color: var(--input-text);
-            font-size: 1rem;
+            font-size: 0.95rem;
             transition: all 0.3s ease;
             font-family: inherit;
         }
@@ -504,25 +529,28 @@
         }
         .form-group textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 100px;
         }
 
         .submit-btn {
             background: var(--bg-topbar);
             color: white;
             border: none;
-            padding: 14px 32px;
+            padding: 12px 28px;
             border-radius: 40px;
-            font-size: 1.05rem;
+            font-size: 0.95rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            width: 100%;
+            justify-content: center;
+            min-height: 48px;
         }
         .submit-btn:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.3);
             background: var(--hover-bg);
         }
@@ -532,20 +560,21 @@
 
         .form-success {
             display: none;
-            padding: 14px 20px;
+            padding: 12px 16px;
             background: var(--highlight-bg);
-            border-radius: 14px;
-            border-left: 4px solid #4CAF50;
+            border-radius: 12px;
+            border-left: 3px solid #4CAF50;
             color: var(--text-secondary);
-            margin-top: 16px;
+            margin-top: 14px;
             animation: fadeInUp 0.4s ease;
+            font-size: 0.9rem;
         }
         .form-success.show {
             display: block;
         }
         .form-success i {
             color: #4CAF50;
-            margin-right: 10px;
+            margin-right: 8px;
         }
 
         @keyframes slideUp {
@@ -559,87 +588,227 @@
             }
         }
 
-        /* ===== Responsive ===== */
-        @media (max-width: 1000px) {
-            .top-bar {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 16px;
-            }
-            .top-profile {
-                text-align: center;
-            }
-            .nav-links {
-                justify-content: center;
-            }
-            .lang-section {
-                justify-content: center;
-            }
-            .top-footer {
-                margin-left: 0;
-                justify-content: center;
-            }
-            .theme-toggle {
-                align-self: center;
-            }
-            .contact-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        /* ===== Responsive Breakpoints ===== */
 
-        @media (max-width: 600px) {
+        /* Small phones */
+        @media (max-width: 380px) {
+            body {
+                padding: 6px;
+            }
             .top-bar {
-                padding: 16px 18px;
+                padding: 12px 12px;
+                gap: 10px;
             }
             .top-profile h2 {
-                font-size: 1.5rem;
+                font-size: 1.1rem;
+            }
+            .top-profile .sub {
+                font-size: 0.65rem;
             }
             .nav-links a {
-                font-size: 0.85rem;
-                padding: 6px 12px;
-                gap: 6px;
+                font-size: 0.65rem;
+                padding: 6px 10px;
+                gap: 4px;
+                min-height: 36px;
+                min-width: 36px;
             }
             .nav-links a i {
-                font-size: 0.9rem;
+                font-size: 0.8rem;
+            }
+            .lang-badge {
+                font-size: 0.6rem;
+                padding: 3px 8px;
+                min-height: 26px;
+            }
+            .lang-badge i {
+                font-size: 0.7rem;
             }
             .main {
-                padding: 20px 16px 26px;
+                padding: 14px 10px 18px;
+                gap: 14px;
             }
             .main-header h1 {
-                font-size: 1.7rem;
+                font-size: 1.3rem;
             }
             .contact-info,
             .contact-form {
-                padding: 20px;
+                padding: 14px;
             }
             .contact-item {
-                padding: 12px 0;
+                padding: 10px 0;
             }
             .social-link {
-                padding: 8px 16px;
-                font-size: 0.85rem;
+                font-size: 0.75rem;
+                padding: 6px 12px;
+                min-height: 36px;
             }
             .badge {
-                font-size: 0.8rem;
-                padding: 6px 16px;
+                font-size: 0.7rem;
+                padding: 6px 12px;
             }
             .theme-toggle {
-                font-size: 0.8rem;
-                padding: 6px 12px;
+                font-size: 0.7rem;
+                padding: 4px 10px;
+                min-height: 32px;
+                min-width: 36px;
+            }
+            .submit-btn {
+                font-size: 0.85rem;
+                padding: 10px 20px;
+                min-height: 40px;
             }
         }
 
-        @media (max-width: 450px) {
-            .nav-links a {
-                font-size: 0.75rem;
-                padding: 4px 10px;
+        /* Phones */
+        @media (min-width: 381px) and (max-width: 480px) {
+            .top-bar {
+                padding: 14px 16px;
+                gap: 12px;
             }
-            .social-links {
-                gap: 8px;
+            .top-profile h2 {
+                font-size: 1.2rem;
+            }
+            .nav-links a {
+                font-size: 0.7rem;
+                padding: 6px 12px;
+                min-height: 40px;
+            }
+            .lang-badge {
+                font-size: 0.65rem;
+                padding: 3px 10px;
+                min-height: 28px;
+            }
+            .main {
+                padding: 16px 14px 20px;
+                gap: 16px;
+            }
+        }
+
+        /* Tablets and small laptops */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .top-bar {
+                padding: 16px 20px;
+            }
+            .top-profile h2 {
+                font-size: 1.4rem;
+            }
+            .nav-links a {
+                font-size: 0.85rem;
+                padding: 8px 16px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .main {
+                padding: 20px 18px 24px;
             }
             .social-link {
-                padding: 6px 12px;
-                font-size: 0.8rem;
+                flex: 0 1 auto;
+            }
+        }
+
+        /* Tablets landscape and small desktops */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .top-bar {
+                padding: 18px 24px;
+                gap: 16px 20px;
+            }
+            .top-profile h2 {
+                font-size: 1.6rem;
+            }
+            .nav-links a {
+                font-size: 0.95rem;
+                padding: 8px 18px;
+            }
+            .nav-links {
+                width: auto;
+            }
+            .lang-section {
+                width: auto;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr 1.5fr;
+                gap: 24px;
+            }
+            .main {
+                padding: 24px 24px 28px;
+            }
+            .top-bar-utils {
+                width: auto;
+            }
+            .social-link {
+                flex: 0 1 auto;
+            }
+            .submit-btn {
+                width: auto;
+                padding: 12px 32px;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1025px) {
+            .top-bar {
+                padding: 18px 32px;
+                gap: 18px 24px;
+            }
+            .top-profile h2 {
+                font-size: 1.8rem;
+            }
+            .top-profile .sub {
+                font-size: 0.9rem;
+            }
+            .nav-links a {
+                font-size: 1.05rem;
+                padding: 10px 20px;
+            }
+            .nav-links {
+                width: auto;
+            }
+            .lang-section {
+                width: auto;
+            }
+            .lang-badge {
+                font-size: 0.85rem;
+                padding: 5px 16px;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr 1.5fr;
+                gap: 24px;
+            }
+            .main {
+                padding: 28px 32px 32px;
+                gap: 26px;
+            }
+            .main-header {
+                flex-direction: row;
+                align-items: center;
+            }
+            .badge {
+                width: auto;
+            }
+            .top-bar-utils {
+                width: auto;
+            }
+            .social-link {
+                flex: 0 1 auto;
+            }
+            .submit-btn {
+                width: auto;
+                padding: 14px 32px;
+            }
+        }
+
+        /* Fix for very wide screens */
+        @media (min-width: 1600px) {
+            .dashboard {
+                border-radius: 48px;
+            }
+            .top-bar {
+                padding: 24px 40px;
+            }
+            .main {
+                padding: 36px 40px 40px;
             }
         }
     </style>
@@ -652,15 +821,15 @@
         <div class="top-bar">
             <div class="top-profile">
                 <h2>Muhammad Rehan Malik</h2>
-                <div class="sub"><i class="fas fa-laptop-code" style="margin-right:6px;"></i>BS Software Engineering · 2nd Semester</div>
+                <div class="sub"><i class="fas fa-laptop-code" style="margin-right:4px;"></i>BS Software Engineering · 2nd Semester</div>
             </div>
 
             <!-- Navigation with all pages -->
             <ul class="nav-links">
-                <li><a href="index.html"><i class="fas fa-home"></i> Main</a></li>
-                <li class="active"><a href="contact.html"><i class="fas fa-address-book"></i> Contact</a></li>
-                <li><a href="mission.html"><i class="fas fa-bullseye"></i> Missions</a></li>
-                <li><a href="work.html"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> <span class="nav-text">Main</span></a></li>
+                <li class="active"><a href="contact.html"><i class="fas fa-address-book"></i> <span class="nav-text">Contact</span></a></li>
+                <li><a href="mission.html"><i class="fas fa-bullseye"></i> <span class="nav-text">Missions</span></a></li>
+                <li><a href="work.html"><i class="fas fa-briefcase"></i> <span class="nav-text">Work</span></a></li>
             </ul>
 
             <!-- Tech badges -->
@@ -668,14 +837,16 @@
                 <span class="lang-label"><i class="fas fa-code"></i> Tech:</span>
                 <span class="lang-badge"><i class="fab fa-html5"></i> HTML</span>
                 <span class="lang-badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                <span class="lang-badge"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="lang-badge"><i class="fab fa-js"></i> JS</span>
                 <span class="lang-badge"><i class="fas fa-database"></i> SQL</span>
+                <span class="lang-badge"><i class="fab fa-php"></i> PHP</span>
+                <span class="lang-badge"><i class="fab fa-laravel"></i> Laravel</span>
                 <span class="lang-badge"><i class="fas fa-vial"></i> Playwright</span>
                 <span class="lang-badge"><i class="fas fa-code"></i> C++</span>
             </div>
 
             <!-- Theme Toggle + Footer -->
-            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+            <div class="top-bar-utils">
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i> <span id="themeLabel">Dark</span>
                 </button>
@@ -705,8 +876,6 @@
                             <p><a href="mailto:muhammadmalikrehan6@gmail.com">muhammadmalikrehan6@gmail.com</a></p>
                         </div>
                     </div>
-
-               
 
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -776,7 +945,6 @@
     <!-- ===== JavaScript: Theme Toggle & Form ===== -->
     <script>
         (function() {
-            // Theme Toggle
             const themeToggle = document.getElementById('themeToggle');
             const themeLabel = document.getElementById('themeLabel');
             const html = document.documentElement;
@@ -818,6 +986,7 @@
 
             console.log('📬 Contact page — Muhammad Rehan');
             console.log('💡 Fill out the form and click send to see the success message!');
+            console.log('📱 Fully responsive — works on all devices!');
         })();
     </script>
 
